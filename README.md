@@ -1,0 +1,1 @@
+# star-automated-test
