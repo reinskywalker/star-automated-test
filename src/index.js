@@ -1,5 +1,7 @@
 const fs = require('fs');
 const { envDecoder, decryptData } = require('./utils');
+const supertest = require ('supertest');
+const { jsonToGraphQLQuery } = require ('json-to-graphql-query');
 
 function writeFileEncrypted(envObject, encryptionKey) {
     const decodedEnv = envDecoder(envObject);
@@ -14,4 +16,14 @@ function writeFileEncrypted(envObject, encryptionKey) {
     });
 }
 
-module.exports = { writeFileEncrypted };
+const endpoints = (token, body) => {
+    const api = supertest(global.BASE_URL_API_STAR);
+
+    return api.post('/graphql')
+        .set("Authorization", token)
+        .send({
+            query: jsonToGraphQLQuery(body, { pretty: true })
+        });
+};
+
+module.exports = { writeFileEncrypted, endpoints };
