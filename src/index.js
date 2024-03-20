@@ -26,7 +26,7 @@ const endpoints = (token, body) => {
         });
 };
 
-export const uploadImage = async (token, filePath, microservices) => {
+const uploadImage = async (token, filePath, microservices) => {
     const fileName = filePath.split('/').slice(-1).join('');
     const microservicesToCamelize = microservices.split(/\s+/)
     .map(function(word, index) {
@@ -95,4 +95,4 @@ export const uploadImage = async (token, filePath, microservices) => {
     return {operationId: dataUploadComplete.operationId, url};
 }
 
-module.exports = { writeFileEncrypted, endpoints };
+module.exports = { writeFileEncrypted, endpoints, uploadImage };
