@@ -9,9 +9,6 @@
   "keywords": [],
   "author": "reinskywalker",
   "license": "ISC",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "dependencies": {
     "crypto-js": "^4.2.0"
   }
