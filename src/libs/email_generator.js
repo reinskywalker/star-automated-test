@@ -1,4 +1,4 @@
-const {generateRandomName} = require('./libs/name_generator');
+const {generateRandomName} = require('../libs/name_generator');
 
 /**
  * Generates a random email address.

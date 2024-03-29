@@ -1,6 +1,6 @@
 const fs = require('fs');
 const axios = require('axios');
-const { endpoints } = require('./endpoints');
+const { endpoints } = require('../libs/graphql.endpoints');
 
 /**
  * Uploads an image to a microservice.
