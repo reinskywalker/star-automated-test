@@ -28,4 +28,4 @@ function decryptData(encryptedData, key) {
     return decryptedData;
 }
 
-module.exports = { envDecoder, decryptData };
+module.exports = {envDecoder,decryptData};

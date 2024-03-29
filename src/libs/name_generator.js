@@ -3,7 +3,7 @@
  * @param {boolean} [includeLastName=false] - Whether to include a last name.
  * @returns {string[]} An array containing the generated first and last names, or just the first name if includeLastName is false.
  */
-export function generateRandomName(includeLastName = false) {
+function generateRandomName(includeLastName = false) {
     const vowels = 'aeiou';
     const consonants = 'bcdfghjklmnpqrstvwxyz';
     
@@ -36,3 +36,5 @@ export function generateRandomName(includeLastName = false) {
     }
     return includeLastName ? [firstName, lastName] : [firstName];
 }
+
+module.exports = {generateRandomName};
