@@ -1,13 +1,13 @@
 {
   "name": "star-automated-test",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "reinskywalker",
+  "author": "Andre Reynaldi Lusikooy",
   "license": "ISC",
   "dependencies": {
     "crypto-js": "^4.2.0",

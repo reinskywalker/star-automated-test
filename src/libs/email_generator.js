@@ -1,10 +1,10 @@
-import { generateRandomName } from './libs/name_generator';
+const {generateRandomName} = require('./libs/name_generator');
 
 /**
  * Generates a random email address.
  * @returns {string} A randomly generated email address.
  */
-export function generateRandomEmail() {
+function generateRandomEmail() {
     const getName = generateRandomName();
     const domains = [
         "gmail.com",
@@ -18,7 +18,6 @@ export function generateRandomEmail() {
         "yandex.com",
         "mail.com",
         "example.com",
-        "test.com",
         "domain.com",
         "email.com",
         "inbox.com",
@@ -33,3 +32,5 @@ export function generateRandomEmail() {
     const email = `${nameWithoutSpaces}@${randomDomain}`;
     return email;
 }
+
+module.exports = { generateRandomEmail };
