@@ -1,4 +1,4 @@
-const {endpoints} = require('./libs/graphql.endpoints');
+const {GraphQLClient} = require('./libs/graphql.endpoints')
 const {generateRandomEmail} = require('./libs/email_generator');
 const {generateRandomName} = require('./libs/name_generator');
 const {uploadImage} = require('./libs/uploadImage');
@@ -13,7 +13,7 @@ const {writeFileEncrypted} = require('./libs/writeFileEncrypted');
 
 module.exports = { 
     writeFileEncrypted, 
-    endpoints, 
+    GraphQLClient, 
     uploadImage, 
     generateRandomName,
     generateRandomEmail,
