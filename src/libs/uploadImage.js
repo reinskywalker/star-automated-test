@@ -85,6 +85,4 @@ function uploadImage(token, filePath, microservices) {
     });
 }
 
-module.exports = { 
-    uploadImage
-};
+module.exports = {uploadImage};

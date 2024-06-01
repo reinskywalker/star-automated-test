@@ -3,6 +3,7 @@ const {generateRandomEmail} = require('./libs/email_generator');
 const {generateRandomName} = require('./libs/name_generator');
 const {uploadImage} = require('./libs/uploadImage');
 const {writeFileEncrypted} = require('./libs/writeFileEncrypted');
+const {imageBlobFileGenerator} = require('./libs/imageBlobGenerator')
 
 /**
  * Author: Andre Reynaldi Lusikooy
@@ -17,4 +18,5 @@ module.exports = {
     uploadImage, 
     generateRandomName,
     generateRandomEmail,
+    imageBlobFileGenerator
 };

@@ -17,4 +17,4 @@ function GraphQLClient(token, body) {
         });
 }
 
-module.exports = { GraphQLClient };
+module.exports = {GraphQLClient};

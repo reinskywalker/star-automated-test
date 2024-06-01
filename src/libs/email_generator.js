@@ -33,4 +33,4 @@ function generateRandomEmail() {
     return email;
 }
 
-module.exports = { generateRandomEmail };
+module.exports = {generateRandomEmail};
